@@ -1,0 +1,13 @@
+.skill__icon {
+    fill: #8750f7; /* Set the desired color */
+}
+
+.upper svg,
+.upper p{
+    transition: transform 0.3s ease;
+}
+
+.upper:hover svg,
+.upper:hover p {
+    transform: translateY(-4px);
+}

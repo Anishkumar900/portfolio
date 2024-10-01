@@ -1,0 +1,331 @@
+*{
+    scrollbar-width: thin;
+    scrollbar-color: rgb(148, 29, 207) rgb(17, 24, 39);
+}
+
+
+
+.navmain {
+    font-family: Poppins, sans-serif;
+}
+
+.barbutton {
+    background: linear-gradient(90deg, #3f24d5, rgb(255, 255, 255));
+    width: 150%;
+    height: 4px;
+    border-radius: 13px;
+    margin-top: 2px;
+    transition: background 3s ease, transform 3s ease;
+    transform: scaleX(0);
+    transform-origin: right; 
+}
+
+.active .barbutton {
+    transform: scaleX(1); 
+}
+
+
+
+.web {
+    background: linear-gradient(90deg, rgb(148, 29, 207), rgb(218, 198, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    /* font-size: 4rem; */
+    /* Adjust font size directly if needed */
+    margin-top: 1.25rem;
+    /* Equivalent to mt-5 (20px) */
+}
+
+
+.aboutimg {
+    /* border: #3f24d5; */
+    border-color: blueviolet;
+    border-width: 2px;
+    transform: rotate(-5deg);
+    /* Use transform instead of rotate */
+    transition: transform 400ms;
+    /* Correct transition syntax */
+}
+
+.aboutimg:hover {
+    transform: rotate(0deg);
+    /* Ensure to use transform here as well */
+}
+
+.aboutme {
+    background: linear-gradient(90deg, rgb(148, 29, 207), rgb(218, 198, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+
+.services {
+    background: linear-gradient(90deg, rgb(148, 29, 207), rgb(218, 198, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-flex;
+    /* This can stay as 'inline' */
+    font-size: 4rem;
+    font-weight: bolder;
+    /* margin-top: 40px; */
+    padding-top: 40px;
+    text-align: center;
+    /* display: flex; */
+    justify-items: center;
+    align-items: center;
+}
+
+
+.front-main {
+    transition: transform 0.5s ease;
+}
+
+.front-main:hover {
+    transform: translateY(-6px);
+}
+
+.icon-container-front {
+    border: 1.5px, solid, rgb(141, 118, 180);
+    /* padding: 3px; */
+    background-color: black;
+    /* Set the background to black */
+    padding: 20px;
+    display: inline-block;
+    transition: transform, 500ms;
+}
+
+.icon-front {
+    color: rgb(141, 118, 180);
+    /* Change the SVG color to green */
+    height: 25px;
+    width: 25px;
+}
+
+.icon-container-front:hover {
+    transform: scale(1.2);
+}
+
+.front {
+    background: linear-gradient(90deg, rgb(148, 29, 207), rgb(218, 198, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    font-size: larger;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+
+.back-main {
+    transition: transform 0.5s ease;
+}
+
+.back-main:hover {
+    transform: translateY(-6px);
+}
+
+
+.icon-container-back {
+    border: 1.5px, solid, rgb(48, 181, 99);
+    /* padding: 3px; */
+    background-color: black;
+    /* Set the background to black */
+    padding: 20px;
+    display: inline-block;
+    transition: transform, 500ms;
+}
+
+.icon-back {
+    color: rgb(48, 181, 99);
+    /* Change the SVG color to green */
+    height: 25px;
+    width: 25px;
+}
+
+.icon-container-back:hover {
+    transform: scale(1.2);
+}
+
+.back {
+    background: linear-gradient(90deg, rgb(48, 181, 99), rgb(177, 229, 199));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    font-size: larger;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.webdev-main {
+    transition: transform 0.5s ease;
+}
+
+.webdev-main:hover {
+    transform: translateY(-6px);
+}
+
+
+.icon-container-webdev {
+    border: 1.5px, solid, rgb(141, 118, 180);
+    /* padding: 3px; */
+    background-color: black;
+    /* Set the background to black */
+    padding: 20px;
+    display: inline-block;
+    transition: transform, 500ms;
+}
+
+.icon-webdev {
+    color: rgb(141, 118, 180);
+    /* Change the SVG color to green */
+    height: 25px;
+    width: 25px;
+}
+
+.icon-container-webdev:hover {
+    transform: scale(1.2);
+}
+
+.webdev {
+    background: linear-gradient(90deg, rgb(148, 29, 207), rgb(218, 198, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    font-size: larger;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.myskill {
+    background: linear-gradient(90deg, rgb(148, 29, 207), rgb(218, 198, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.8rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.section-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+.front-skill-main,
+.back-skill-main {
+    border: 1px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+
+    border-radius: 25px;
+}
+
+
+.front-skill-main:hover {
+    transform: scale(1.03);
+    border-color: rgb(120, 7, 218);
+}
+
+.back-skill-main:hover {
+    transform: scale(1.03);
+    border-color: rgb(120, 7, 218);
+    /* Change border color on hover */
+}
+
+.project {
+    background: linear-gradient(90deg, rgb(148, 29, 207), rgb(218, 198, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.8rem;
+    font-weight: bolder;
+    text-align: center;
+    /* Center the text */
+}
+
+.section-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.scrollcss {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(148, 29, 207) rgb(17, 24, 39);
+}
+
+
+.url {
+    background: linear-gradient(90deg, #c1b0e2, #8750f7);
+    transition: all 5s ease;
+}
+
+.url:hover {
+    background: linear-gradient(90deg, #634c92, #3e125f);
+}
+
+
+.contactme {
+    background: linear-gradient(90deg, rgb(148, 29, 207), rgb(218, 198, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.1rem;
+    font-weight: bolder;
+}
+
+
+
+.footer-send {
+    transition: all 0.5s ease;
+    border: 1px solid transparent; /* Start with a transparent border */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly visible background */
+}
+
+.footer-send:hover {
+    border-width: 2px; /* Change border width on hover */
+    border-color: rgb(148, 29, 207); /* Change border color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Change background on hover for a smoother feel */
+}
+
+
+
+
+input::placeholder,
+textarea::placeholder {
+    font-weight: 100; 
+    /* color: rgba(255, 255, 255, 0.7);  */
+}
+
+input:focus,
+textarea:focus {
+    border-width: 1px; 
+    border-color: rgb(148, 29, 207); 
+    outline: none; 
+    /* box-shadow: 0 0 5px rgba(148, 29, 207, 0.5);  */
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    transition: border-width 0.3s ease, outline 0.001ms ease;
+    border: 1px solid transparent; 
+}
+
+.footericon {
+    transition: transform 0.3s ease; /* Adjust duration as needed */
+    background: transparent; /* Ensures button background is transparent */
+    border: none; /* Removes default button border */
+    cursor: pointer; /* Changes cursor on hover */
+}
+
+.footericon:hover {
+    transform: scale(1.3);
+}
